@@ -1,0 +1,21 @@
+.button {
+    width: 298px;
+    height: 54px;
+    @include orang;
+    border-radius: 25px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:hover {
+        background: $orange-hover-color;
+    }
+    &:active {
+        background: $green-color;
+    }
+    &_disabled {
+        background: $gray-color;
+    }
+}
