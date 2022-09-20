@@ -1,0 +1,16 @@
+@import 'assets/styles/libs/normalize';
+@import 'assets/styles/libs/font';
+
+@import 'assets/styles/base/variables';
+@import 'assets/styles/base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
