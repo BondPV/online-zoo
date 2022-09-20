@@ -1,0 +1,46 @@
+.header {
+    min-height: 80px;
+    padding: 14px 0 14px 0;
+    background-color: #000000;
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 82px;
+        height: 52px;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+    }
+    &__logo-img {
+        position: absolute;
+        width: 15px;
+        height: 18px;
+        left: 9px;
+        top: 23px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        &:hover {
+            color: $orange-hover-color;
+        }
+    }
+    &__link {
+        margin-left: auto;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: $orange-hover-color;
+        }
+    }
+}

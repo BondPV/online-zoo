@@ -6,11 +6,16 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     position: relative;
-    max-width: 1600px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
+@import 'assets/styles/blocks/header';
+@import 'assets/styles/blocks/nav-menu';
