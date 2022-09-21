@@ -1,0 +1,38 @@
+.backstage {
+    min-height: 617px;
+    padding: 140px 0 74px 0;
+    background: url(assets/images/flower_foto1.png) right (bottom/auto) no-repeat;
+    &__wrap {
+        display: flex;
+    };
+    &__img {
+        display: block;
+        width: 609px;
+        height: 403px;
+    }
+    &__descr {
+        margin-left: 87px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        color: $black_blue-color;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 132%;
+        color: $black_blue-color;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: $black_blue-color;
+        margin-top: 54px;
+        margin-bottom: 34px;
+    }
+
+}

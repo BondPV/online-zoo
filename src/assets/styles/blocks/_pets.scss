@@ -1,0 +1,74 @@
+.pets {
+    min-height: 1212px;
+    padding: 106px 0 100px 0;
+    background: url(assets/images/palm_foto.png) left -5px (bottom/auto) no-repeat,
+    url(assets/images/strelitzia1.png) right -5px (bottom/auto) no-repeat;
+    &__wrap {
+        position: relative;
+    }
+    &__items {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+        }
+    &__item {
+        width: 366px;
+        height: 426px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $orange-color;
+        border-radius: 5px;
+        overflow: hidden;
+        }
+    &__photo {
+        width: calc(366px - 4px);
+        height: calc(366px - 2px);
+        border-radius: 5px 5px 0 0;
+        transition: 0.6s all;
+        &:hover {
+            transform: scale(1.055);
+        }
+    }
+    &__descr {
+        padding: 6px 0 14px 14px;
+        font-weight: 300;
+        font-size: 15px;
+        color: #000000;
+        &_plants {
+            background-image: url(assets/icons/banana-bamboo_icon.svg);
+            background-position: center right 12px;
+            background-size: 33px 37px;
+            background-repeat: no-repeat;
+        }
+        &_meets {
+            background-image: url(assets/icons/meet-fish_icon.svg);
+            background-position: center right 8px;
+            background-size: 48px 38px;
+            background-repeat: no-repeat;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    &__btn-prev, &__btn-next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+    &__btn-prev {
+        left: -82px;
+    }
+    &__btn-next {
+        right: -82px;
+    }
+}
