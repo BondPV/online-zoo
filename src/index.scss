@@ -18,6 +18,7 @@
 }
 
 @import 'assets/styles/blocks/button';
+@import 'assets/styles/blocks/slider-range';
 
 @import 'assets/styles/blocks/header';
 @import 'assets/styles/blocks/nav-menu';
@@ -25,3 +26,12 @@
 @import 'assets/styles/blocks/backstage';
 @import 'assets/styles/blocks/pets';
 @import 'assets/styles/blocks/pick-and-feed';
+@import 'assets/styles/blocks/testimonials';
+@import 'assets/styles/blocks/footer';
+
+// page 2
+.page2-bg {
+    height: 386px;
+    background: url(assets/images/panda_bg.jpg) center (bottom/cover) no-repeat;
+}
+@import 'assets/styles/blocks/donate';

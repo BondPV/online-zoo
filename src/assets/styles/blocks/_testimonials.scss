@@ -1,0 +1,58 @@
+.testimonials {
+    min-height: 919px;
+    padding: 140px 0 180px 0;
+    background: url(assets/images/leav_foto.png) right -5px (bottom -130px/auto) no-repeat;
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        color: $black_blue-color;
+    }
+    &__items {
+        display: flex;  
+        margin-top: 48px;
+        gap: 30px;      
+    }
+    &__item {
+        padding: 15px 15px 19px 15px;
+        width: 268px;
+        height: 391px;
+        border: 2px solid transparent;
+        @include pink_gradient;
+        box-shadow: inset 0px 0px 0px 100vw $light_grayl-color; 
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__item-header {
+        display: flex;
+    }
+    &__item-photo {
+        width: 37px;
+        height: 37px;
+    }
+    &__item-name {
+        margin-left: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        color: #BDBDBD;
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+    }
+    &__item-descr {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: $gray-color;
+    }
+    &__range {
+        margin: 0 auto;
+        margin-top: 21px;
+    }
+    &__btn {
+        margin-top: 31px;
+    }
+}

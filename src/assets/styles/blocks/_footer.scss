@@ -1,0 +1,97 @@
+.footer {
+    height: 443px;
+    padding: 40px 0 50px 0;
+    background-color: #111115;
+    &__wrap {
+        display: grid;
+        grid-template-rows: 90px auto 145px;
+        grid-template-columns: 298px auto 367px;
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+    &__logo {
+        grid-column: 1;
+    }
+    &__social {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: end;
+        display: flex;
+        flex-direction: column;
+    }
+    &__social-item {
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__social-icon {
+        margin-right: 12px;
+    }
+    &__nav {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: end;
+    }
+    &__nav-menu {
+        margin-left: 79px;
+        gap: 58px;
+        font-weight: 400;
+    }
+    &__subscribe {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    &__btn {
+        grid-column: 1;
+        grid-row: 2;
+        a, a:visited {
+            display: block;
+            padding: 18px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &__form-descr {
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    &__copyright {
+        grid-column: 3;
+        grid-row: 3;
+        justify-self: end;
+        align-self: end;
+    }
+    &__copyright-link {
+        font-weight: 100;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:active {
+            color: $green-color;
+            border-bottom: 1px solid $green-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.feed-form {
+    input {
+        margin-right: 5px;
+        outline: none;
+        width: 228px;
+        border-radius: 1px;
+        border: 1px solid $orange-color2;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input:valid:not(:placeholder-shown) {
+        border-color: $green-color;
+    }
+    input:invalid:not(:placeholder-shown) {
+        border-color: $red-collor;
+    }
+}

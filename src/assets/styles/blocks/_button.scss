@@ -11,6 +11,9 @@
     color: #FFFFFF;
     cursor: pointer;
     transition: 0,5s all;
+    &_min-radius {
+        border-radius: 5px;
+    }
     &:hover {
         background: $orange-hover-color;
     }
@@ -24,5 +27,22 @@
         width: 62px;
         height: 62px;
         border-radius: 50%;
+    }
+}
+
+.button-submit {
+    width: 129px;
+    height: 42px;
+    color: $light_grayl-color;
+    border-radius: 5px;
+    border: 1px solid $black_blue-color;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $black_blue-color;
+    cursor: pointer;
+    transition: 0,5s all;
+    &:active {
+        color: $green-color;
     }
 }

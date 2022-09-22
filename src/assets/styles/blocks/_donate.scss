@@ -1,0 +1,32 @@
+.donate {
+    min-height: 1482px;
+    padding: 40px 0 180px 0;
+    @include orange_grad;
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__info {
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        color: $orange-color2;
+    }
+    &__pick-wrap {
+        margin-top: 60px;
+        min-height: 964px;
+        padding: 40px 92px 62px 92px;
+        border-radius: 20px;
+        background: rgba(253, 253, 255, 0.52);
+        backdrop-filter: blur(2px);
+    }
+}
