@@ -29,4 +29,57 @@
         background: rgba(253, 253, 255, 0.52);
         backdrop-filter: blur(2px);
     }
+    &__pick-title {
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        color: $orange-color2;
+    }
+    &__pick-text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        color: $black_blue-color;
+    }
+    &__pick-amount {
+        display: flex;
+        width: 532px;
+        margin: 0 auto;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__pick-number {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: $black_blue-color;
+        span {
+            font-weight: 500;
+            font-size: 72px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+    &__pick-xicon {
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: auto;
+        width: 14px;
+        height: 14px;
+        background: url(assets/icons/x_icon.svg) center (center/cover) no-repeat;
+    }
+    &__form-position {
+        margin-top: 50px;
+    }
+    &__text-bottom {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $black_blue-color;
+        text-align: center;
+    }
 }

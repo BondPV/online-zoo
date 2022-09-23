@@ -1,0 +1,268 @@
+//* Amount slider
+
+$number-of-options: 8;
+// .form-wrapper {
+// 	width: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+//     align-items: center;
+// }
+.form-amount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+	.form-title {
+		align-self: flex-start;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+	}
+	.debt-amount-slider {
+        margin-top: 17px;
+		display: flex;
+		flex-direction: row;
+		align-content: stretch;
+		position: relative;
+		width: 100%;
+		height: 27px;
+		user-select: none;
+        background-color: #404950;
+        border-radius: 2px;
+        &::before {
+            //параметры линии
+			content: " "; 
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			width: calc(100% * (#{$number-of-options - 1} / #{$number-of-options}));
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #72828E;
+        }
+		input, label {
+			box-sizing: border-box;
+			flex: 1;
+			user-select: none;
+			cursor: pointer;
+		}
+		label {
+			display: inline-block;
+			position: relative;
+			width: 20%;
+			height: 100%;
+			user-select: none;
+			&::before {
+                //подписи
+				content: attr(data-debt-amount);
+				position: absolute;
+				left: 50%;
+                transform: translate(-50%, 45px); // смещение текста относительно маркеров
+				font-size: 26px;
+                font-weight: 400;
+                color: $black_blue-color;
+				// white-space: nowrap;
+				// opacity: 0.85;
+				// transition: all 0.15s ease-in-out;
+			}
+			&::after {
+                // маркеры
+				content: " "; 
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 10px;
+				height: 10px;
+                background: $yellow_color;
+				border-radius: 50%;
+				pointer-events: none;
+				user-select:none;
+				z-index: 1;
+				cursor: pointer;
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover::after {
+                transform: translate(-50%, -50%) scale(1.25);
+                background: $orange-color2;
+                
+                
+			}
+		}
+		input {
+			display: none;
+			&:checked {
+				+ label::before {
+                    // выделенный текст
+                    opacity: 1;
+                    color: $orange-color2;
+				}
+				+ label::after { 
+                    //выделенный маркер
+                    background: $yellow_color;
+                    border: solid 1px #333;
+                    outline: solid 2px $orange-color2;
+                    outline-offset: 15px;
+                    transform: translate(-50%, -50%) scale(1);                    
+				}
+				~ #debt-amount-pos {
+					opacity: 1;
+				}
+				@for $i from 1 through $number-of-options {
+					&:nth-child(#{$i * 2 - 1}) ~ #debt-amount-pos {
+						left: #{($i * 20%) - 10%};
+					}
+				}
+			}
+		}
+		.debt-amount-pos {
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 12px;
+			height: 12px;
+			background: #000;
+			border-radius: 50%;
+			transition: all 0.15s ease-in-out;
+			transform: translate(-50%, -50%);
+			border: 2px solid #fff;
+			opacity: 0;
+			z-index: 2;
+		}
+	}
+	&:valid {
+		.debt-amount-slider {
+			input {
+				+ label::before {
+					transform: translate(-50%, 45px) scale(0.9);
+					transition: all 0.15s linear;
+				}
+				&:checked + label::before {
+					transform: translate(-50%, 45px) scale(1.1);
+					transition: all 0.15s linear;
+				}
+			}
+		}
+	}
+	& + button {
+		display: block;
+		position: relative;
+		margin: 56px auto 0;
+		padding: 10px 20px;
+		appearance: none;
+		transition: all 0.15s ease-in-out;
+        &:hover {
+            background: #000;
+			color: #fff;
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+    }
+	&:invalid + button {
+		pointer-events: none; //кнопка не активна
+		opacity: 0.4;
+	}
+}
+
+//* Another amount
+.donate-another-amount {
+    position: relative;
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    span {
+        position: absolute;
+        top: 18px;
+        right: 9px;
+        font-weight: 500;
+        font-size: 18px;
+        //background-color: transparent;
+        color: #929699;
+        //transform: translateY(-50%)
+    }
+    input  {
+        height: 54px;
+        background-color: transparent;
+        border: solid 1px #929699;
+        padding: 9px;
+        font-weight: 400;
+        font-size: 18px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            color: #929699;
+        
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+}
+
+//* Donate regularity
+.donate-radio-regularity {
+	display: flex;
+	justify-content: center;
+}
+.donate-regularity {
+    padding: 25px; //зона нажатия на кнопку
+	cursor: pointer;
+    transition: background .2s ease;
+    margin: 8px 0;
+    -webkit-tap-highlight-color: transparent; 
+    input {
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: solid 1px $orange-color2;
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+        pointer-events: none; 
+    }
+    input:focus {
+        outline: none; 
+    }
+    input:checked {
+        border: none;
+        background: $green-color;
+    }
+    span {
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        line-height: 20px;
+        padding: 0 8px; 
+    }
+    span:checked {
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 140%;
+        color: yellow;
+        line-height: 20px;
+        padding: 0 8px; 
+    }
+}
+
+
+

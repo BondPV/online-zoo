@@ -54,12 +54,50 @@
                             <span>4</span>
                             <br>Panda diet for the day.
                         </div>
-                        <div class="donate__pick-multiply">x</div>
+                        <div class="donate__pick-xicon"></div>
                         <div class="donate__pick-animal">
                             <img src="../assets/icons/animals/panda-widget.svg" alt="Animal widget">
                         </div>
                     </div>
-                    <div class="donate__feed-form"></div>
+                    <div class="donate-feed-form">
+                        <form class="form-amount donate__form-position" action="#" method="GET">
+                            <div class="form-title">Amount</div>
+                            <div class="debt-amount-slider">
+                                <input type="radio" name="debt-amount" id="1" value="1" required>
+                                <label for="1" data-debt-amount="$5000"></label>
+                                <input type="radio" name="debt-amount" id="2" value="2" required>
+                                <label for="2" data-debt-amount="$2000"></label>
+                                <input type="radio" name="debt-amount" id="3" value="3" required>
+                                <label for="3" data-debt-amount="$1000"></label>
+                                <input type="radio" name="debt-amount" id="4" value="4" required>
+                                <label for="4" data-debt-amount="$500"></label>
+                                <input type="radio" name="debt-amount" id="5" value="5" required>
+                                <label for="5" data-debt-amount="$250"></label>
+                                <input type="radio" name="debt-amount" id="6" value="6" required>
+                                <label for="6" data-debt-amount="$100"></label>
+                                <input type="radio" name="debt-amount" id="7" value="7" required>
+                                <label for="7" data-debt-amount="$50"></label>
+                                <input type="radio" name="debt-amount" id="8" value="8" required>
+                                <label for="8" data-debt-amount="$25"></label>
+                                <div class="debt-amount-pos"></div>
+                            </div>
+                            <div class="donate-another-amount">
+                                <input type="number" min="1" max="9999" placeholder="Another amount">
+                                <span>$</span>
+                            </div>
+                            <div class="donate-radio-regularity">
+                                <label for="monthly" class="donate-regularity">
+                                    <input type="radio" id="monthly" name="selector" value="monthly">
+                                    <span>Monthly</span>
+                                </label>
+                                <label for="once" class="donate-regularity">
+                                    <input type="radio" id="once" name="selector" value="once" checked>
+                                    <span>Once</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="button">Feed a friend now</button>
+                        </form>
+                    </div>
                     <div class="donate__text-bottom">Share with your friends on social networks </div>
                 </div>
             </div>
