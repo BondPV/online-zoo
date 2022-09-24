@@ -25,9 +25,19 @@
         margin-top: 7px;
         color: #FFFFFF;
         text-decoration: none;
+        transition: 0.25s all;
+        svg {
+            color: #C4C4C4;
+        }
+        &:hover {
+            color: $green-color;
+            svg {
+                color: $green-color;
+            }
+        }
     }
     &__social-icon {
-        margin-right: 12px;
+        margin-left: 12px;
     }
     &__nav {
         grid-column: 2;
@@ -64,17 +74,28 @@
         grid-row: 3;
         justify-self: end;
         align-self: end;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            .footer__desighed, .footer__company {
+            color: $green-color;
+            border-bottom: 1px solid $green-color;
+            text-decoration: none;
+            }
+        }
+    }
+    &__desighed {
+        margin-bottom: 10px;
+        font-weight: 100;
+        font-size: 16px;
+        color: #FFFFFF;
     }
     &__copyright-link {
         font-weight: 100;
         font-size: 16px;
         color: #FFFFFF;
         text-decoration: none;
-        &:active {
-            color: $green-color;
-            border-bottom: 1px solid $green-color;
-            text-decoration: none;
-        }
     }
 }
 
@@ -82,16 +103,37 @@
     input {
         margin-right: 5px;
         outline: none;
+        background-color: transparent;
         width: 228px;
         border-radius: 1px;
-        border: 1px solid $orange-color2;
+        border: 1px solid $black_blue-color;
         padding: 10px;
         box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        &::placeholder {
+            font-size: 16px;
+            color: #929699;
+        }
+    input:active {
+        border: 1px solid $red-collor;
+    }
     }
     input:valid:not(:placeholder-shown) {
         border-color: $green-color;
+        color: $green-color;
+        & + button {
+            color: $green-color;
+            border: 1px solid $green-color;
+        }
     }
     input:invalid:not(:placeholder-shown) {
         border-color: $red-collor;
+        color: $red-collor;
+        & + button {
+            color: $red-collor;
+            border: 1px solid $red-collor;
+        }
     }
 }

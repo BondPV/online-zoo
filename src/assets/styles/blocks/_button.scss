@@ -33,16 +33,16 @@
 .button-submit {
     width: 129px;
     height: 42px;
-    color: $light_grayl-color;
     border-radius: 5px;
     border: 1px solid $black_blue-color;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: $black_blue-color;
+    color: #000000;
     cursor: pointer;
     transition: 0,5s all;
     &:active {
+        border: 1px solid $green-color;
         color: $green-color;
     }
 }

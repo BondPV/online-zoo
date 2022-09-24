@@ -21,21 +21,33 @@
         border-color: $orange-color;
         border-radius: 5px;
         overflow: hidden;
+        &:hover {
+            .pets__photo {
+                transform: scale(1.055);
+                opacity: 0.4;
+            } 
+            background-color: $black_blue-color;
+            .pets__descr {
+                transform: translateY(-50px);
+                color: $light_grayl-color;
+                &_plants, &_meets {
+                    background-image: none;
+                }
+            }
         }
+    }
     &__photo {
         width: calc(366px - 4px);
         height: calc(366px - 2px);
         border-radius: 5px 5px 0 0;
         transition: 0.6s all;
-        &:hover {
-            transform: scale(1.055);
-        }
     }
     &__descr {
         padding: 6px 0 14px 14px;
         font-weight: 300;
         font-size: 15px;
         color: #000000;
+        transition: 0.6s all;
         &_plants {
             background-image: url(assets/icons/banana-bamboo_icon.svg);
             background-position: center right 12px;

@@ -94,6 +94,12 @@
         display: block;
         margin: 0 auto;
         margin-top: 62px;
+        a, a:visited {
+            display: block;
+            padding: 18px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
 
 }
