@@ -5,6 +5,11 @@
     url(assets/images/strelitzia1.png) right -5px (bottom/auto) no-repeat;
     &__wrap {
         position: relative;
+        }
+    &__items-wrap {
+        width: 100%;
+        height: 872px;
+        overflow: hidden;
     }
     &__items {
         display: grid;

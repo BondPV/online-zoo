@@ -86,6 +86,7 @@
         line-height: 140%;
     }
     &__arrow {
+        background: url(assets/icons/arrow.svg) center (center/cover) no-repeat;
         margin-top: 64px;
         width: 69px;
         height: 35px;        
@@ -101,5 +102,4 @@
             text-decoration: none;
         }
     }
-
 }

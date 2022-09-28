@@ -8,9 +8,14 @@
         text-align: center;
         color: $black_blue-color;
     }
+    &__items-wrap {
+        margin-top: 48px;
+        width: 100%;
+        height: 391px;
+        overflow: hidden;
+    }
     &__items {
         display: flex;  
-        margin-top: 48px;
         gap: 30px;      
     }
     &__item-border-gradient {
