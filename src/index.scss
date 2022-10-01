@@ -16,6 +16,9 @@
     max-width: 1160px;
     margin: 0 auto;
 }
+.hamburger {
+    display: none;
+}
 
 @import 'assets/styles/blocks/button';
 @import 'assets/styles/blocks/slider-range';

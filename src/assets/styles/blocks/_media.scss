@@ -1,31 +1,3 @@
-// @media (max-width: 1599px) {
-//     .container {
-//         max-width: 1100px;
-//     }
-//     .backstage {
-//         padding: 100px 0 74px 0;
-//         background: url(assets/images/flower_foto1.png) right -70px (bottom/auto) no-repeat;
-//         &__img-crop {
-//             min-width: 455px;
-//             min-height: 408px;
-//             overflow: hidden;
-//         }
-//         &__img {
-//             margin: 10px -80px;
-//             display: block;
-//             width: auto;
-//             height: 408px;
-//         }
-//         &__descr {
-//             margin-left: 31px;
-//         }
-//         &__text {
-//             width: 90%;
-//             line-height: 135%;
-//         }
-//     }
-// }
-
 //* small_desktop 1000px
 @media (max-width: 1599px) {
     .container {
@@ -194,29 +166,17 @@
     }
     .footer {
         &__wrap {
-            grid-template-columns: 298px auto 400px;//
-        }
-        &__logo {
-            //margin-left: 14px;//
-        }
-        &__social {
-            //margin-left: 14px;//
-        }
-        &__social-icon {
-            //margin-left: 12px;
+            grid-template-columns: 298px auto 400px;
         }
         &__nav {
-            grid-column: 1 / 4;//
-            grid-row: 3;//
-            justify-self: center;//
-            align-self: end;//
+            grid-column: 1 / 4;
+            grid-row: 3;
+            justify-self: center;
+            align-self: end;
         }
         &__nav-menu {
-            margin-left: 0px;//
-            gap: 50px;//
-        }
-        &__btn {
-            //margin-left: 14px;//
+            margin-left: 0px;
+            gap: 50px;
         }
     }
 
@@ -226,42 +186,42 @@
         background: url(assets/images/panda_bg.jpg) left -180px (bottom/auto 390px) no-repeat;
     }
     .donate {
-        min-height: 1333px;//
-        padding: 40px 0 30px 0;//
+        min-height: 1333px;
+        padding: 40px 0 30px 0;
         &__title {
-            line-height: 130%;//
-            width: 778px;//
+            line-height: 130%;
+            width: 778px;
         }
         &__descr {
-            margin-top: 30px;//
+            margin-top: 30px;
         }
         &__info {
-            margin-top: 47px;//
+            margin-top: 47px;
         }
         &__pick-wrap {
-            margin-top: 39px;//
-            min-height: 918px;//
-            padding: 20px 44px 46px 47px;//
+            margin-top: 39px;
+            min-height: 918px;
+            padding: 20px 44px 46px 47px;
         }
         &__pick-title {
-            margin-left: -15px;//
+            margin-left: -15px;
         }
         &__pick-text {
-            margin-top: 13px;//
+            margin-top: 13px;
         }
         &__pick-amount {
-            margin-left: 150px;//
+            margin-left: 150px;
         &__pick-xicon {
-            margin-left: 10px;//
+            margin-left: 10px;
         }
     }
     }
 //* Donate regularity
     .donate-regularity {
-        padding: 33px; //
-        margin: -9px 0;//
-        margin-left: -17px; //
-        margin-bottom: -3px;//
+        padding: 33px; 
+        margin: -9px 0;
+        margin-left: -17px; 
+        margin-bottom: -3px;
     }
 }
 
@@ -273,165 +233,155 @@
         max-width: 600px;
     }
     .header {
-        //!!! position: fixed;
-        min-height: 34px;//
-        padding: 2px 0 2px 0;//
-       
+        position: fixed;
+        width: 100%;
+        min-height: 34px;
+        padding: 2px 0 2px 0;
         &__link {
-            display: none;//
+            display: none;
         }
         &__nav-menu {
-            display: none; //
+            display: none;
         }
     }
     .logo {
-        margin-left: 9px;//
-        width: 47px;//
-        height: 29px;//
-        border: none; //
+        width: 47px;
+        height: 29px;
+        border: none;
         &__title-small {
-            font-size: 12px;//
+            font-size: 12px;
             &::before {
-                left: 0px;//
-                bottom: 0px;//
-                background: url('assets/icons/bamboo.svg') center center/50% auto no-repeat;//
+                left: 0px;
+                bottom: 0px;
+                background: url('assets/icons/bamboo.svg') center center/50% auto no-repeat;
             }
         }
     }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 15px;
+        cursor: pointer;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+            }
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+        }
+    }
     .watch-online {
-        min-height: 373px;//
+        min-height: 373px;
         background: url(assets/images/giant-panda_tablet.jpg) center (bottom/cover) no-repeat;//
-        padding-top: 86px;//
+        padding-top: 86px;
         &__wrap {
-            width: 256px;//
+            width: 250px;
         }
         &__descr {
             display: block;
-            height: 205px;//
+            height: 205px;
         }
         &__title {
-            font-size: 54px;//
+            font-size: 54px;
         }
         &__round {
-            left: -26px;//
-            top: -42px;//
-            width: 238px;//
-            height: 238px;//
+            left: -40px;
+            top: -42px;
+            width: 238px;
+            height: 238px;
         }
         &__btn {
-            position: absolute;//
-            margin-top: 0px;//
-            left: 7px;//
-            bottom: -42px;//
+            position: absolute;
+            margin-top: 0px;
+            left: 0px;
+            bottom: -42px;
         }
     }
     .backstage {
-        min-height: 470px;//
-        padding: 60px 0 44px 0;//
-        background: url(assets/images/flower_foto1.png) right -100px (bottom/231px 476px) no-repeat;//
+        min-height: 470px;
+        padding: 60px 0 44px 0px;
+        background: url(assets/images/flower_foto1.png) right -39px bottom -20px/170px auto no-repeat;
         &__wrap {
-            display: flex;
-            flex-direction: column;//
+            display: block;
         };
         &__img-crop {
-            display: none;//
-            width: 609px;
-            height: 403px;
+            display: none;
         }
         &__descr {
-            margin-left: 0px;//
-            width: 495px;//
-        }
-        &__title {
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 120%;
-            color: $black_blue-color;
-            margin-bottom: 20px;
-        }
-        &__text {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 132%;
-            color: $black_blue-color;
+            margin-left: 0px;
+            width: 495px;
         }
         &__subtitle {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 130%;
-            color: $black_blue-color;
-            margin-top: 30px;//
-            margin-bottom: 17px;//
+            margin-top: 30px;
+            margin-bottom: 17px;
         }
     
     }
     .pets {
-        min-height: 1006px;//*
-        padding: 36px 0 100px 0;//*
-        background: url(assets/images/palm_foto_2.png) left -70px (bottom/auto 202px) no-repeat,
-        url(assets/images/strelitzia1.png) right -8px (bottom/auto 131px) no-repeat;//
+        min-height: 1006px;
+        padding: 36px 0 100px 0;
+        background: url(assets/images/palm_foto_2.png) left -60px (bottom/auto 202px) no-repeat,
+        url(assets/images/strelitzia1.png) right 2px (bottom/auto 131px) no-repeat;
         &__items-wrap {
-            width: 100%;
-            height: 756px;//*
-            overflow: hidden;
+            width: 600px;
+            height: 756px;
         }
         &__item {
-            width: 285px;//*
-            height: 332px;//*
-            &_gorillas {
-                order: 3;
-            }
-            &_alligators {
-                order: 4;
-            }
-            &_penguins {
-                order: 5;
-            }
-            &_toed {
-                order: 6;
-            }
+            width: 285px;
+            height: 332px;
         }
         &__photo {
-            width: calc(285px - 4px);//*
-            height: calc(285px - 2px);//*
+            width: calc(285px - 4px);
+            height: calc(285px - 2px);
         }
         &__descr {
-            padding: 6px 0 11px 13px;//*
-            font-weight: 300;
-            font-size: 12px;//*
-            color: #000000;
-            transition: 0.6s all;
+            padding: 6px 0 11px 13px;
+            font-size: 12px;
             &_plants {
-                background-image: url(assets/icons/banana-bamboo_icon.svg);
-                background-position: center right 5px;//*
-                background-size: 26px 29px;//*
-                background-repeat: no-repeat;
+                background-position: center right 5px;
+                background-size: 26px 29px;
             }
             &_meets {
-                background-image: url(assets/icons/meet-fish_icon.svg);
-                background-position: center right 5px;//*
-                background-size: 37px 30px;//*
-                background-repeat: no-repeat;
+                background-position: center right 5px;
+                background-size: 37px 30px;
             }
         }
         &__name {
             font-weight: 500;
-            font-size: 12px;//*
-            text-transform: uppercase;
+            font-size: 12px;
         }
         &__btn {
-            margin-top: 16px;//*
+            margin-top: 60px;
         }
         &__btn-prev {
-            left: 221px;//*
+            left: 221px;
         }
         &__btn-next {
-            right: 221px;//*
+            right: 221px;
         }
     }
     .pick-and-feed {
         &__container {
-            max-width: 640px;
+            width: 640px;
         }
         min-height: 781px;
         padding: 20px 0;
@@ -446,16 +396,22 @@
             width: 100%;
             padding-left: 0px;
         }
+        &__info {
+            font-size: 22px;
+        }
         &__text {
             margin-top: 10px;
             width: 100%;
-            letter-spacing: -0.3px;
             &_select {
                 margin-top: 20px;
             }
         }
         &__subtitle {
             margin-top: 30px;
+        }
+        &__items {
+            margin-top: 22px;
+            margin-right: 10px;
         }
         &__arrow {
             position: relative;
@@ -467,194 +423,409 @@
                 content:'';
                 display: block;
                 position: absolute;
-                left:-50px;
-                top: -18px;
+                left:-52px;
+                top: -23px;
                 width: 87px;
                 height: 40px;
                 background: url(assets/icons/arrow2.svg) center (center/87px auto) no-repeat;
             }
         }
         &__btn {
-            margin-top: 40px;//
+            margin-top: 40px;
         }
     }
     .testimonials {
-        min-height: 668px;//
-        padding: 60px 0 80px 0;//
-        background: url(assets/images/leav_foto.png) right -5px (bottom -130px/auto) no-repeat;
-        &__title {
-            font-weight: 400;
-            font-size: 36px;
-            text-align: center;
-            color: $black_blue-color;
-        }
+        min-height: 668px;
+        padding: 60px 0 80px 0;
+        background: url(assets/images/leav_foto.png) right -5px (bottom -65px/120px auto) no-repeat;
         &__items-wrap {
-            margin-top: 30px;//
-            width: 100%;
-            height: 357px;//
-            overflow: hidden;
+            margin-top: 35px;
+            height: 357px;
         }
         &__items {
-            display: flex;
-            flex-direction: column;//
-            gap: 15px;//      
+            flex-direction: column;
+            gap: 15px;    
         }
         &__item-border-gradient {
-            width: 100%;//
-            height: 109px;//
-            @include pink_gradient;
-            border-radius: 20px;
-            padding: 2px;
+            width: 100%;
+            height: 109px;
         }
         &__item {
-            width: 100%;
-            height: 100%;
-            background: $light_grayl-color;
-            border-radius: 19px;
-            padding: 15px 29px 8px 18px;
-            overflow: hidden;//
-        }
-        &__item-header {
-            display: flex;
-        }
-        &__item-photo {
-            width: 37px;
-            height: 37px;
-        }
-        &__item-name {
-            margin-left: 10px;
-            font-weight: 300;
-            font-size: 15px;
-            color: #BDBDBD;
-            span {
-                font-weight: 400;
-                font-size: 16px;
-                color: #000000;
-            }
+            overflow: hidden;
         }
         &__item-comment {
-            margin-top: 10px;
-            font-weight: 300;
-            font-size: 15px;
-            line-height: 120%;
-            color: $gray-color;
+            line-height: 140%;
         }
         &__range {
-            display: none;//
+            display: none;
         }
         &__btn {
-            display: block;//
-            margin: 0 auto;//
-            margin-top: 40px;//
+            display: block;
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 240px;
         }
     }
     .footer {
-        height: 282px;//
-        padding: 13px 0 13px 0;//
-        background-color: #111115;
+        height: 282px;
+        padding: 13px 0 13px 0;
         &__wrap {
-            display: grid;
-            grid-template-rows: 52px auto 87px;//
-            grid-template-columns: 300px auto 228px;//
-            row-gap: 30px;
-            column-gap: 20px;
-        }
-        &__logo {
-            grid-column: 1;
+            grid-template-rows: 52px auto 87px;
+            grid-template-columns: 300px auto 228px;
         }
         &__social {
-            grid-column: 3;//
-            grid-row: 1/4;//
-            align-self: start;//
-            justify-self: end;//
-            display: flex;
-            flex-direction: column;
+            grid-column: 3;
+            grid-row: 1/4;
+            align-self: start;
+            justify-self: end;
         }
         &__social-item {
-            display: flex;
-            align-items: center;
-            margin-top: 0px;//
-            margin-bottom: 20px;//
-            color: #FFFFFF;
-            text-decoration: none;
-            transition: 0.25s all;
-            svg {
-                color: #C4C4C4;
-            }
-            &:hover {
-                color: $green-color;
-                svg {
-                    color: $green-color;
-                }
-            }
+            margin-top: 0px;
+            margin-bottom: 20px;
         }
         &__social-icon {
-            display: none; //
-            margin-left: 12px;
+            display: none; 
         }
         &__nav {
-            grid-column: 1;//
-            grid-row: 3;//
-           // align-self: end;
+            grid-column: 1;
+            grid-row: 3;
         }
         &__nav-menu {
-            margin-left: 0px;//
-            gap: 37px;//
+            margin-left: 0px;
+            gap: 37px;
             font-weight: 400;
         }
         &__subscribe {
-            grid-column: 3;
-            grid-row: 1;
-        }
-        &__btn {
-            grid-column: 1;
-            grid-row: 2;
-            a, a:visited {
-                display: block;
-                padding: 18px;
-                color: #FFFFFF;
-                text-decoration: none;
-            }
+            display: none;
         }
         &__form-descr {
-            display: none;//
-        }
-        &__copyright {
-            
-            grid-column: 3;
-            grid-row: 3;
-            justify-self: end;
-            align-self: end;
-            &:hover {
-                cursor: pointer;
-            }
-            &:active {
-                .footer__desighed, .footer__company {
-                color: $green-color;
-                border-bottom: 1px solid $green-color;
-                text-decoration: none;
-                }
-            }
-        }
-        &__desighed {
-            margin-bottom: 10px;
-            font-weight: 100;
-            font-size: 16px;
-            color: #FFFFFF;
-        }
-        &__copyright-link {
-            font-weight: 100;
-            font-size: 16px;
-            color: #FFFFFF;
-            text-decoration: none;
+            display: none;
         }
     }
-    
     .feed-form {
-        display: none;//
+        display: none;
+    }
+    // page 2
+    .page2-bg {
+        height: 369px;
+        background: url(assets/images/panda_bg_tablet.jpg) center (bottom -7px/cover) no-repeat;
+    }
+    .donate {
+        padding: 30px 0 46px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 120%;
+            width: 600px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+        &__info {
+            margin-top: 30px;
+        }
+        &__pick-wrap {
+            margin-top: 30px;
+            padding: 30px 0px 31px 0px;
+        }
+        &__pick-title {
+            margin-left: 0px;
+        }
+        &__pick-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__pick-amount {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 52px;
+        }
+        &__pick-animal {
+            margin-right: 10px;
+        }
+        &__form-position {
+            margin-top: 32px;
+        }
+    }
+//* Donate regularity
+    .donate-another-amount input {
+        height: 42px;
+    }
+    .donate-another-amount {
+        width: 180px;
+    }
+    .donate-another-amount span {
+        top: 12px;
     }
 }
 
-//* mobile
-@media (max-width: 320px) {
+//! mobile
+@media (max-width: 639px) {
+    .container {
+        max-width: 300px;//
+    }
+
+    .watch-online {
+        min-height: 221px;//
+        background: url(assets/images/giant-panda_mobile.jpg) center (bottom/cover) no-repeat;//
+        padding-top: 75px;//
+        &__wrap {
+            width: 128px;//
+        }
+        &__descr {
+            display: block;
+            height: 103px;//
+        }
+        &__title {
+            font-size: 28px;//
+            line-height: 75%;//
+        }
+        &__round {
+            left: -20px;//
+            top: -19px;//
+            width: 119px;//
+            height: 119px;//
+        }
+        &__btn {
+            bottom: -117px;//
+
+        }
+    }
+    .backstage {
+        min-height: 532px;//
+        padding: 104px 0 40px 0px;//
+        background: url(assets/images/flower_foto1_mobile.png) right 0px top 38px/35px auto no-repeat;//
+        &__wrap {
+            display: block;
+        };
+        &__img-crop {
+            display: none;
+        }
+        &__title {
+            font-size: 24px;//
+            margin-bottom: 10px;//
+        }
+        &__descr {
+            margin-left: 0px;
+            width: 100%;//
+        }
+        &__subtitle {
+            margin-top: 18px;//
+            margin-bottom: 10px;//
+        }
+    
+    }
+    .pets {
+        min-height: 1522px;//
+        padding: 0px 0 60px 0;//
+        background: url(assets/images/palm_foto_2.png) left -12px (bottom/auto 72px) no-repeat,
+        url(assets/images/strelitzia1.png) right -20px (bottom -3px/auto 71px) no-repeat;//
+        &__items-wrap {
+            width: 100%;//
+            height: 1388px;//
+        }
+        &__items {
+            grid-template-rows: repeat(4, 1fr);//
+            grid-template-columns: 1fr;//
+            row-gap: 20px;//
+            }
+        &__btn {
+            margin-top: 20px;//
+        }
+        &__btn-prev {
+            display: none;//
+        }
+        &__btn-next {
+            display: none;//
+        }
+    }
+    .pick-and-feed {
+        min-height: 1082px;//
+        &__container {
+            width: 100%;//
+        }
+        &__wrap {
+            padding: 20px 0px 40px 0px;//
+            min-height: 1042px;//
+        }
+        &__title {
+            font-size: 24px;//
+        }
+        &__info {
+            font-size: 18px;//
+            text-align: center;//
+            margin-top: 10px;//
+            line-height: 120%;//
+        }
+        &__text {
+            display: none;//
+        }
+        &__subtitle {
+            font-size: 24px;//
+            margin-top: 20px;//
+        }
+        &__items {
+            flex-direction: column;//
+            align-items: center;//
+            max-width: 100%;//
+            margin: 0 auto;//
+            margin-top: 20px;//
+        }
+        &__item{
+            min-height: 246px;//
+        }
+        &__item-descr {
+            margin-top: 10px;//
+        }
+        &__arrow {
+            &::after {
+                left:57px;//
+                top: -57px;//
+                transform: rotate(82deg);//
+            }
+        }
+        &__btn {
+            margin-top: 16px;//
+        }
+    }
+    .testimonials {
+        min-height: 580px;//
+        padding: 30px 0 60px 0;//
+        background: url(assets/images/leav_foto_mobile.png) right 0px (bottom -34px/54px auto) no-repeat;//
+        &__items-wrap {
+            margin-top: 20px;//
+        }
+        &__title {
+            font-size: 24px;//
+        }
+        &__item {
+            padding: 10px 13px 19px 13px;//
+        }
+        &__item-name {
+            margin-left: 4px;//
+        }
+        &__item-comment {
+            line-height: 150%;//
+        }
+        &__btn {
+            margin-top: 30px;//
+        }
+    }
+    .footer {
+        height: 334px;//
+        padding: 20px 0 20px 0;//
+        &__wrap {
+            grid-template-rows: repeat(5, auto);
+            grid-template-columns: 1fr;
+            gap: 30px;//
+        }
+        &__logo {
+            grid-column: 1;
+            grid-row: 1;//
+            border: none;//
+            justify-self: center;//
+            width:128px;//
+            height: 23px;//
+            font-size: 19px;//
+        }
+        &__title {
+            &::before {
+                left: 72px;//
+            }
+        }
+        &__social {
+            grid-column: 1;
+            grid-row: 2;
+            justify-self: center;//
+            flex-direction: row;//
+            gap: 30px;//
+        }
+        &__social-item {
+            margin-top: 0px;//
+            margin-bottom: 0px;//
+        }
+        &__social-icon {
+            display: none; 
+        }
+        &__nav {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        &__nav-menu {
+            margin-left: 0px;
+            gap: 30px;//
+            font-weight: 400;
+        }
+        &__subscribe {
+            display: none;
+        }
+        &__form-descr {
+            display: none;
+        }
+        &__btn {
+            grid-column: 1;//
+            grid-row: 3;//
+        }    
+        &__copyright {
+            grid-column: 1;//
+            grid-row: 4;//
+            justify-self: end;
+            align-self: end;
+            font-size: 15px;//
+            letter-spacing: -0.5px;//
+        }
+    }
+    .feed-form {
+        display: none;
+    }
+    // page 2
+    .page2-bg {
+        height: 369px;
+        background: url(assets/images/panda_bg_tablet.jpg) center (bottom -7px/cover) no-repeat;
+    }
+    .donate {
+        padding: 30px 0 46px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 120%;
+            width: 600px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+        &__info {
+            margin-top: 30px;
+        }
+        &__pick-wrap {
+            margin-top: 30px;
+            padding: 30px 0px 31px 0px;
+        }
+        &__pick-title {
+            margin-left: 0px;
+        }
+        &__pick-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__pick-amount {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 52px;
+        }
+        &__pick-animal {
+            margin-right: 10px;
+        }
+        &__form-position {
+            margin-top: 32px;
+        }
+    }
+//* Donate regularity
+    .donate-another-amount input {
+        height: 42px;
+    }
+    .donate-another-amount {
+        width: 180px;
+    }
+    .donate-another-amount span {
+        top: 12px;
+    }
 }
