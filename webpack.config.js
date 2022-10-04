@@ -65,7 +65,7 @@ module.exports = ({ development }) => {
     entry: getEntryPoints(pages),
     context: srcPath,
     output: {
-      filename: 'js/[name].[contenthash].js',
+      filename: 'js/[name].js',
       path: path.resolve(__dirname, 'dist'),
       assetModuleFilename: '[file]',
     },
