@@ -10,6 +10,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    position: relative;
+}
 
 .container {
     position: relative;
@@ -45,3 +48,16 @@
 //media
 
 @import 'assets/styles/blocks/media';
+
+.overlay_active {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+}

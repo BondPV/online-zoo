@@ -69,17 +69,17 @@
                         <div class="donate-feed-form__wrap">
                             <div class="donate-feed-form__price-randge-bg">
                                 <div class="donate-feed-form__price-range">
-                                    <input class="range-input-5000" type="radio" id="5000" name="price-range" value="5000"/>
-                                        <label class="range-label-5000" for="5000" data-debt-amount="$5000"></label>
+                                    <input class="range-input" type="radio" id="5000" name="price-range" value="5000"/>
+                                        <label class="range-label" for="5000" data-debt-amount="$5000"></label>
                                     <input class="range-input" type="radio" id="2000" name="price-range" value="2000"/>
                                         <label class="range-label" for="2000" data-debt-amount="$2000"></label>
-                                    <input class="range-input" type="radio" id="1000" name="price-range" value="1000" checked/>
+                                    <input class="range-input" type="radio" id="1000" name="price-range" value="1000"/>
                                         <label class="range-label" for="1000" data-debt-amount="$1000"></label>
                                     <input class="range-input" type="radio" id="500" name="price-range" value="500"/>
                                         <label class="range-label" for="500" data-debt-amount="$500"></label>
                                     <input class="range-input" type="radio" id="250" name="price-range" value="250"/>
                                         <label class="range-label" for="250" data-debt-amount="$250"></label>
-                                    <input class="range-input" type="radio" id="100" name="price-range" value="100"/>
+                                    <input class="range-input" type="radio" id="100" name="price-range" value="100" checked/>
                                         <label class="range-label" for="100" data-debt-amount="$100"></label>
                                     <input class="range-input" type="radio" id="50" name="price-range" value="50"/>
                                         <label class="range-label" for="50" data-debt-amount="$50"></label>
@@ -87,21 +87,23 @@
                                         <label class="range-label" for="25" data-debt-amount="$25"></label>
                                 </div>
                             </div>
-                            <div class="donate-feed-form__another-amount">
-                                <input name="another-amount" maxlength="4" type="number" min="1" max="9999" placeholder="Another amount">
-                                <span>$</span>
-                            </div>
-                            <div class="donate-feed-form__regularity">
-                                <label class="donate-feed-form__regularity-selector">
-                                    <input type="radio" name="regularity-selector" value="monthly">
-                                    <span>Monthly</span>
-                                </label>
-                                <label class="donate-feed-form__regularity-selector">
-                                    <input type="radio" name="regularity-selector" value="once" checked>
-                                    <span>Once</span>
-                                </label>
-                            </div>
-                            <button type="submit" class="button donate-feed-form__btn">Feed a friend now</button>
+                            <form action="#">
+                                <div class="donate-feed-form__another-amount">
+                                    <input id="another-amount" name="another-amount" type="number" max="9999" value="100" placeholder="Another amount" required>
+                                    <span>$</span>
+                                </div>
+                                <div class="donate-feed-form__regularity">
+                                    <label class="donate-feed-form__regularity-selector">
+                                        <input type="radio" name="regularity-selector" value="monthly">
+                                        <span>Monthly</span>
+                                    </label>
+                                    <label class="donate-feed-form__regularity-selector">
+                                        <input type="radio" name="regularity-selector" value="once" checked>
+                                        <span>Once</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="button donate-feed-form__btn">Feed a friend now</button>
+                            </form>
                         </div>
                     </div>
                     <div class="donate__text-bottom">Share with your friends on social networks </div>
@@ -170,5 +172,6 @@
             </div>
         </div>
     </footer>
+    <div class="overlay"></div>
 </body>
 </html>
