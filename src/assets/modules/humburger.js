@@ -1,4 +1,3 @@
-'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header'),
@@ -22,8 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     overlayBurger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('header_active');
-        overlayBurger.classList.toggle('overlay_active');
+        hamburger.classList.remove('hamburger_active');
+        menu.classList.remove('header_active');
+        overlayBurger.classList.remove('overlay_active');
     });
 });

@@ -2,6 +2,9 @@
     min-height: 919px;
     padding: 140px 0 180px 0;
     background: url(assets/images/leav_foto.png) right -5px (bottom -130px/auto) no-repeat;
+    &__item-popup {
+        pointer-events: none;
+    }
     &__title {
         font-weight: 400;
         font-size: 36px;
@@ -16,7 +19,8 @@
     }
     &__items {
         display: flex;  
-        gap: 30px;      
+        gap: 29px;    
+        transition: 0.2s;
     }
     &__item-border-gradient {
         width: 268px;

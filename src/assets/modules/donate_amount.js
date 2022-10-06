@@ -1,4 +1,3 @@
-'use strict';
 
 const inputAmount = document.querySelector('#another-amount'),
         amountNumbers = document.querySelectorAll('.range-input');

@@ -22,6 +22,7 @@
     }
     &_disabled {
         background: $gray-color;
+        pointer-events: none;
     }
     &_prev, &_next {
         width: 62px;

@@ -611,7 +611,48 @@
             margin-top: 40px;
             width: 240px;
         }
+        &__item-popup {
+            pointer-events: auto;
+            cursor: pointer;
+        }
+        &__item-popup_active {
+            display: block;
+            position: fixed;
+            top: 50px;
+            transform: translateY(50%);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 428px;
+            padding: 20px 36px 17px 17px;
+            background: #F5F7F6;
+            transition: 0.0s all;
+            z-index: 15;
+            .testimonials__close {
+                position: absolute;
+                top: 12px;
+                right: 10px;
+                width: 14px;
+                height: 14px;
+                background: url(assets/icons/x_icon_popup.svg) center (center/auto) no-repeat;
+                cursor: pointer;
+            }
+            .testimonials__item-border-gradient {
+                min-width: 100%;
+                height: 100%;
+            }
+            .testimonials__item {
+                width: 100%;
+                height: 100%;
+            }
+            .testimonials__item-comment {
+                font-size: 15px;
+                line-height: 120%;
+            }
+        }
+        
     }
+
     .footer {
         height: 282px;
         padding: 13px 0 13px 0;

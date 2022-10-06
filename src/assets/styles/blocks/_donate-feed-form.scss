@@ -12,6 +12,13 @@
 		align-items: center;
 		width: 100%;
 	}
+	&__form {
+		&:invalid {
+			button {
+				background: $gray-color;
+			}
+		}
+	}
 
 	//* Price randge
 	&__price-randge-bg {
