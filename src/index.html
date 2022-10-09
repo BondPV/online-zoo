@@ -62,8 +62,8 @@
         <div class="container">
             <div class="pets__wrap">
                 <div class="pets__items-wrap">
-                    <div class="pets__items">
-                        <div class="pets__item pets__item_pandas">
+                    <div id="pets__items" class="pets__items">
+                        <div class="pets__item pets__item_pandas pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/giant-pandas.jpg" alt="Two giant pandas">
                             <div class="pets__descr pets__descr_plants">
                                 <span class="pets__name">giant Pandas</span>
@@ -71,7 +71,7 @@
                                 Native to Southwest China
                             </div>
                         </div>
-                        <div class="pets__item pets__item_eagles">
+                        <div class="pets__item pets__item_eagles pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/eagles.jpg" alt="Eagle in flight">
                             <div class="pets__descr pets__descr_meets">
                                 <span class="pets__name">Eagles</span>
@@ -79,7 +79,7 @@
                                 Native to South America
                             </div>
                         </div>
-                        <div class="pets__item pets__item_gorillas">
+                        <div class="pets__item pets__item_gorillas pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/gorillas.jpg" alt="Gorilla">
                             <div class="pets__descr pets__descr_plants">
                                 <span class="pets__name">Gorillas</span>
@@ -87,7 +87,7 @@
                                 Native to Congo
                             </div>
                         </div>
-                        <div class="pets__item pets__item_toed">
+                        <div class="pets__item pets__item_toed pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/two-toed_sloth.jpg" alt="Two-toed Sloth">
                             <div class="pets__descr pets__descr_plants">
                                 <span class="pets__name">Two-toed Sloth</span>
@@ -95,7 +95,7 @@
                                 Mesoamerica, South America
                             </div>
                         </div>
-                        <div class="pets__item pets__item_cheetahs">
+                        <div class="pets__item pets__item_cheetahs pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/cheetans.jpg" alt="Cheetah with a cub">
                             <div class="pets__descr pets__descr_meets">
                                 <span class="pets__name">cheetahs</span>
@@ -103,7 +103,7 @@
                                 Native to Africa
                             </div>
                         </div>
-                        <div class="pets__item pets__item_penguins">
+                        <div class="pets__item pets__item_penguins pets__item_js-active">
                             <img class="pets__photo" src="assets/images/animals/penguins.jpg" alt="Penguin in Antarctica">
                             <div class="pets__descr pets__descr_meets">
                                 <span class="pets__name">Penguins</span>
@@ -119,10 +119,34 @@
                                 Native to Southeastern U. S.
                             </div>
                         </div>
+                        <div class="pets__item pets__item_elephant">
+                            <img class="pets__photo" src="assets/images/animals/elephant.jpg" alt="Elephant">
+                            <div class="pets__descr pets__descr_plants">
+                                <span class="pets__name">Elephant</span>
+                                <br>
+                                Native to Africa
+                            </div>
+                        </div>
+                        <div class="pets__item pets__item_lion">
+                            <img class="pets__photo" src="assets/images/animals/lion.jpg" alt="Lion">
+                            <div class="pets__descr pets__descr_meets">
+                                <span class="pets__name">Lion</span>
+                                <br>
+                                Native to Africa
+                            </div>
+                        </div>
+                        <div class="pets__item pets__item_beaver">
+                            <img class="pets__photo" src="assets/images/animals/beaver.jpg" alt="Beaver">
+                            <div class="pets__descr pets__descr_plants">
+                                <span class="pets__name">Beaver</span>
+                                <br>
+                                Native to South America
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button type="button" class="button button_prev pets__btn-prev">&larr;</button>
-                <button type="button" class="button button_next pets__btn-next">&rarr;</button>
+                <button id="btn-prev" type="button" class="button button_prev pets__btn-prev">&larr;</button>
+                <button id="btn-next" type="button" class="button button_next pets__btn-next">&rarr;</button>
             </div>
             <button type="button" class="button pets__btn">choose your favorite</button>
         </div>

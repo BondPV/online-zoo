@@ -12,6 +12,7 @@
         overflow: hidden;
     }
     &__items {
+        position: relative;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
@@ -88,4 +89,28 @@
     &__btn-next {
         right: -82px;
     }
+}
+
+.pets__item_js-active {
+    order: 0;
+}
+
+
+@keyframes move-next {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+.transition-next {
+    animation-name: move-next;
+    animation-duration: 0.3s;
+}
+@keyframes move-prev {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+.transition-prev {
+    animation-name: move-prev;
+    animation-duration: 0.3s;
 }
