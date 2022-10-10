@@ -8,12 +8,12 @@ console.log(PETS);
 
 const movePrev = () => {
     PETS_ITEMS.classList.add('transition-prev');
-    BTN_PREV.removeListener('click', movePrev);
+    BTN_PREV.removeEventListener('click', movePrev);
 };
 
 const moveNext = () => {
     PETS_ITEMS.classList.add('transition-next');
-    BTN_PREV.removeListener('click', moveNext);
+    BTN_PREV.removeEventListener('click', moveNext);
 };
 
 const randomPets = () => {
@@ -26,7 +26,6 @@ const randomPets = () => {
     }
     PETS_ITEMS.appendChild(frag); /* добавление фрагмента документа добавляет все элементы в перемешанном порядке */
 };
-
 
 BTN_PREV.addEventListener('click', movePrev);
 BTN_NEXT.addEventListener('click', moveNext);

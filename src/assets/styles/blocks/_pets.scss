@@ -18,6 +18,7 @@
         grid-template-columns: repeat(3, 1fr);
         row-gap: 20px;
         column-gap: 30px;
+        grid-auto-flow: column;
         }
     &__item {
         width: 366px;
@@ -91,26 +92,33 @@
     }
 }
 
-.pets__item_js-active {
-    order: 0;
-}
-
-
 @keyframes move-next {
-    from {opacity: 1}
-    to {opacity: 0}
+    from {
+        left: -100%;
+        opacity: 1;
+    }
+    to {
+        left: 0;
+        opacity: 0.1;
+    }
 }
 
 .transition-next {
     animation-name: move-next;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
 }
 @keyframes move-prev {
-    from {opacity: 1}
-    to {opacity: 0}
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: -100%;
+        opacity: 0.1;
+    }
 }
 
 .transition-prev {
     animation-name: move-prev;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
 }
