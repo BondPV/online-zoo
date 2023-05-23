@@ -1,4 +1,7 @@
 # online-zoo
+
+Deploy: https://bondpv.github.io/online-zoo/
+
 There are you can find all commands to run this project:
 
 "npm install": for install required packages 
